@@ -1,0 +1,20 @@
+html, body {
+  height: 100%;
+}
+
+
+#rondomdeeikLogo {
+    width: 100%;
+    /*z-index:1040;*/
+}
+
+#nav {
+    width: 100%;
+    background-color: white;
+    border-style: none;
+    border-radius: 0px;
+}
+
+#rondomdeeikImage {
+    width: 100%;
+}

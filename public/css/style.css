@@ -1,0 +1,296 @@
+html, body {
+  height: 100%;
+}
+
+
+body {
+  background-color: #F2F2F2;
+  /*background:   */
+    /*url('../public/img/colorfultree.png')
+    no-repeat;
+  background-size: 60%;
+  background-attachment: fixed;
+  background-position: 100% 160px; */
+
+
+}
+
+#nav {
+    width: 100%;
+    background-color: white;
+    border-top-style: none;
+    border-bottom-style:solid;
+    border-bottom-color: #000000; 
+    border-radius: 0px;
+    margin-top: -1px;
+}
+
+#rondomdeeikImage {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+#wrapper {
+    min-height: 100%;
+    transition: margin-left .5s;
+    /*margin-left: 3%;*/
+    /*margin-right: 3%;*/
+    /*margin-bottom: 2%;*/
+    background-color: white;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+
+}
+
+
+.carousel {
+  max-width: 80%;
+}
+
+.page {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.page:nth-child(2n+2) {
+  background-color: #FAFAFA;
+}
+
+ 
+.footer {
+    
+    background:   
+      url('../public/img/huizen-rondom-de-eikII.jpg')
+      no-repeat;
+    color: #DDDDDD;
+    line-height: 2em;
+}
+
+.credit-link {
+  font-size: 0.9em;
+}
+
+.footer a {
+  color:rgba(0, 0, 0, 0.8);
+}
+
+.footer .text {
+
+  background: white;
+  padding: inherit;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.openNavIcon {
+  position: fixed;
+  font-size:30px;
+  cursor:pointer;
+  z-index: 1031;
+}
+
+.login-field {
+  padding: 25px 25px 25px 25px;
+  margin-top: 70px;
+}
+
+.hidden {
+  display: none;
+}
+
+.adminmenu {
+    position: absolute;
+    z-index: 10;
+    top:10%;
+    right:0;
+}
+
+.article {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+
+.article-img {
+  width:95%; 
+  margin: 20% auto 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #777;
+} 
+
+.message {
+   position: absolute;
+   height: initial;
+   width: 100%;
+   display: block;
+   text-align: center;
+   margin-top:35px;
+   overflow: hidden;
+      
+}
+
+.select {
+  width: 100%;
+}
+
+.image {
+  margin: 2px 0 2px 0;
+}
+
+.logo {
+  height: 35px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.img-remove {
+  margin-bottom: 3px;
+  float: right;
+  cursor: pointer;  
+}
+
+/* editor styles */
+.formHandlerBtn {
+  width: initial;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 0px;
+  background-color: #fff;
+
+}
+
+.btn-success {
+  color:#5CB85C;
+}
+
+.btn-danger {
+  color:#D9534F;
+}
+
+.btn-warning {
+  color:#F0AD4E;
+}
+
+/*override bootstrap*/
+.nav {
+  font-family: Letter Gothic Std;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+/*admin navigation menu tabs*/
+.nav-tabs {
+    border-bottom: none;
+}
+
+
+.navbar-collapse {
+  border-top-style: none;
+  border-radius: 0px;
+}
+
+
+/*bracktes*/
+
+/* Effect 1: Brackets */
+.brackets a::before,
+.brackets a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.brackets a::before {
+  margin-right: 7px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.brackets a::after {
+  margin-left: 7px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.brackets a:hover::before,
+.brackets a:hover::after,
+.brackets a:focus::before,
+.brackets a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.brackets a:hover {
+  background-color: transparent !important;
+}
+
+
+/* Alerts */
+.alert {
+  text-align: center;
+  border-radius: 0px;
+}
+
+.alert-danger {
+  background-color: #FAEAEA;
+}
+
+.alert-success {
+  background-color: #ECF5EC;
+}
+
+/* form */
+.form-group-sm .form-control {
+  border-radius: 0px;
+}
+
+/* side menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3em;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
