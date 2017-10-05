@@ -1,3 +1,3 @@
 error_log
-**/app/img/articleImages/
+**/public/img/articleImages/
 app/config.php
