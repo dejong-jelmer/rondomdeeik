@@ -1,7 +1,7 @@
-<?php  require '/../templates/header.php'; ?>
+<?php  require __DIR__.'/../templates/header.php'; ?>
 
 <!-- include sidemenu -->
-<?php  include '/../templates/sidemenu.php'; ?>
+<?php  include __DIR__.'/../templates/sidemenu.php'; ?>
 
 <!-- main page content starts here -->
 <div id="wrapper">
@@ -11,7 +11,7 @@
     <div class="row">
         <div style="height:100px;">
             <!-- include messages -->
-            <?php  include '/../templates/messages.php'; ?>
+            <?php  include __DIR__.'/../templates/messages.php'; ?>
         </div>
     </div>
            
@@ -81,5 +81,5 @@
     </div> <!-- end of container -->
 </div> <!-- end of wrapper -->
 <!-- include footer -->
-<?php include '/../templates/footer.php';?>
+<?php include __DIR__.'/../templates/footer.php';?>
 

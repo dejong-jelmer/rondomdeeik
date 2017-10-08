@@ -1,5 +1,5 @@
  <?php 
-    require '/../templates/header.php';
+    require __DIR__.'/../templates/header.php';
 
     
     $pages = null;
@@ -11,7 +11,7 @@
 
 ?>
 <!-- include sidemenu -->
-<?php include '/../templates/sidemenu.php'; ?>
+<?php include __DIR__.'/../templates/sidemenu.php'; ?>
 
 <!-- main page content starts here -->
 <div id="wrapper">
@@ -22,7 +22,7 @@
         <div style="height:100px;">
            
             <!-- include messages -->
-            <?php  include '/../templates/messages.php'; ?>
+            <?php  include __DIR__.'/../templates/messages.php'; ?>
         </div>
     </div>
    
@@ -183,7 +183,7 @@
     </div> <!-- end of container -->
 </div> <!-- end of #wrapper -->
 <!-- include footer -->
-<?php include '/../templates/footer.php';?>
+<?php include __DIR__.'/../templates/footer.php';?>
 
 <script>CKEDITOR.replace('content');</script>
 

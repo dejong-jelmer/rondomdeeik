@@ -1,5 +1,5 @@
 <?php 
-require '/../templates/header.php';
+require __DIR__.'/../templates/header.php';
    
 
 ?>
@@ -8,7 +8,7 @@ require '/../templates/header.php';
         <div class="row">
             <div style="height:100px;">
                 <!-- include messages -->
-                <?php  include '/../templates/messages.php'; ?>
+                <?php  include __DIR__.'/../templates/messages.php'; ?>
             </div>
         </div>
     </div>
@@ -48,5 +48,5 @@ require '/../templates/header.php';
 <br>
 
 <?php 
-    include '/../templates/footer.php';
+    include __DIR__.'/../templates/footer.php';
  ?>

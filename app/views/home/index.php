@@ -19,18 +19,18 @@ if(array_key_exists('images', $data)) {
     $images = $data['images']->images;
 }
 
-require_once '/../templates/header.php';
-include_once '/../templates/navbar.php';
+require_once __DIR__.'/../templates/header.php';
+include_once __DIR__.'/../templates/navbar.php';
 
 ?>
 
 
-<?php  include_once '/../templates/messages.php'; ?>
+<?php  include_once __DIR__.'/../templates/messages.php'; ?>
 
 <?php
     if($this->authUser()) {
         // include sidemenu
-        include_once '/../templates/sidemenu.php'; 
+        include_once __DIR__.'/../templates/sidemenu.php'; 
     }
     ?>
 <div id="wrapper">
@@ -44,7 +44,7 @@ include_once '/../templates/navbar.php';
             <div style="height:100px;">
                    
                 <!-- include messages -->
-                <?php  include_once '/../templates/messages.php'; ?>
+                <?php  include_once __DIR__.'/../templates/messages.php'; ?>
             </div>
         </div>
           
@@ -150,7 +150,7 @@ include_once '/../templates/navbar.php';
     </div> <!-- end of container -->
 </div>
 
-<?php     include_once '/../templates/footer.php'; ?>
+<?php     include_once __DIR__.'/../templates/footer.php'; ?>
 
 <script type="text/javascript">
     window.onload = function() {
